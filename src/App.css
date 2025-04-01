@@ -1,0 +1,46 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+  
+}
+/* -------------------------- */
+
+.about {
+  margin:0 10%;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+}
+
+nav {
+
+  /* position:absolute !important; */
+  /* padding: 5%; */
+  /* width: 750px !important; */
+  margin-top:0% !important;
+  /* align-items: center !important; */
+  
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+}
+
+
+/* img .hero-image, #test-image{
+  width: 25%;
+} */
+
+/* ----------------------------- */
+
+
+
+/* --------------------------------------- */
+
+
