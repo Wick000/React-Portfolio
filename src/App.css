@@ -32,7 +32,13 @@ header {
   margin-top: 5%;
 }
 
-
+.bg { 
+  
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+ 
+}
 /* img .hero-image, #test-image{
   width: 25%;
 } */

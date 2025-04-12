@@ -8,15 +8,31 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume.jsx"
 import "./App.css";
-
+import CLOUDS2 from "../node_modules/vanta/src/vanta.clouds2.js";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const vantaEffect = CLOUDS2({
+      el: "#vanta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      texturePath: "./gallery/noise.png"
+    });
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, []);
   return (
-
-    <Router>
+  <div className="bg" id="vanta">
+    <Router >
       <Navbar />
         <Header />
-      <main>
+      <main >     
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
@@ -26,6 +42,7 @@ function App() {
       </main>
       <Footer />
     </Router>
+  </div>  
   );
 }
 

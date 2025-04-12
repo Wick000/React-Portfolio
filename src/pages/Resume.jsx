@@ -4,7 +4,7 @@ function Resume () {
     return (
         <div className = "resume">
             <a href="https://drive.google.com/uc?export=download&id=1ecP8Nr54aSQMPEhIHKTAvCFZMr7HdjIJ" download>
-                Download My Resume (PDF)
+                Download My Resume (`PDF)
             </a>
 
             <h2 className = "rTitle">Resume</h2>
